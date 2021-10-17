@@ -33,7 +33,12 @@ p {
   line-height: 1.5;
   text-align: center;
 }
-
+#app-heading {
+  text-align: start;
+}
+.app-description {
+  text-align: start;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -64,7 +69,7 @@ p {
   text-align: center;
   display: block;
 }
-.app-link {
+.project-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
@@ -91,8 +96,21 @@ p {
 .email-link:hover {
   text-decoration: underline;
 }
-@media (min-width: 300px) {
-  .portfolio-images {
-    display: none;
+@media (max-width: 576px) {
+  #app-heading {
+    font-size: 40px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  .app-description {
+    text-align: center;
+    display: block;
+  }
+  .project-link {
+    text-align: center;
+    display: block;
+    margin: 0 20px;
   }
 }
